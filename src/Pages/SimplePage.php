@@ -25,7 +25,7 @@ class SimplePage extends Page
         return $this->record->title ?? 'Simple Page';
     }
 
-    public static function getSlug() : string
+    public function getSlug() : string
     {
         return FilamentSimplePagesPlugin::get()->getPrefixSlug() . '/{slug}';
     }
@@ -35,7 +35,7 @@ class SimplePage extends Page
         return $this->record->title ?? 'Simple Page';
     }
 
-    public static function shouldRegisterSpotlight(): bool
+    public function shouldRegisterSpotlight(): bool
     {
         return false;
     }
