@@ -9,6 +9,7 @@ use Illuminate\Support\Facades\Blade;
 use Illuminate\Contracts\Support\Htmlable;
 use Afsdarif\FilamentSimplePages\FilamentSimplePagesPlugin;
 use Afsdarif\FilamentSimplePages\Traits\SimplePageTrait;
+use Filament\Panel;
 
 class SimplePage extends Page
 {
@@ -25,7 +26,7 @@ class SimplePage extends Page
         return $this->record->title ?? 'Simple Page';
     }
 
-    public function getSlug() : string
+    public static function getSlug(?Panel $panel = null): string
     {
         return FilamentSimplePagesPlugin::get()->getPrefixSlug() . '/{slug}';
     }
