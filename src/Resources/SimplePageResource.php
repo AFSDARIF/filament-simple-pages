@@ -19,12 +19,14 @@ use Filament\Actions;
 use Filament\Schemas\Components\Section;
 use Filament\Schemas\Components\Grid;
 use Filament\Forms\Get;
+use BackedEnum;
+use Illuminate\Contracts\Support\Htmlable;
 
 class SimplePageResource extends Resource
 {
     protected static ?string $model = SimplePage::class;
 
-    protected static ?string $navigationIcon = 'heroicon-o-document-duplicate';
+    protected static string | BackedEnum | null $navigationIcon = 'heroicon-o-document-duplicate';
 
     public static function form(Schema $schema): Schema
     {
