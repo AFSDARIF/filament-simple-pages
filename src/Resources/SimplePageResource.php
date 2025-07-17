@@ -18,7 +18,7 @@ use Filament\Tables\Table;
 use Filament\Actions;
 use Filament\Schemas\Components\Section;
 use Filament\Schemas\Components\Grid;
-use Filament\Forms\Get;
+use Filament\Schemas\Components\Utilities\Get;
 use BackedEnum;
 use Illuminate\Contracts\Support\Htmlable;
 
