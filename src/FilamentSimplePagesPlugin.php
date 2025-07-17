@@ -1,11 +1,11 @@
 <?php
 
-namespace Tobiasla78\FilamentSimplePages;
+namespace Afsdarif\FilamentSimplePages;
 
 use Filament\Contracts\Plugin;
 use Filament\Panel;
-use Tobiasla78\FilamentSimplePages\Pages\SimplePage;
-use Tobiasla78\FilamentSimplePages\Resources\SimplePageResource;
+use Afsdarif\FilamentSimplePages\Pages\SimplePage;
+use Afsdarif\FilamentSimplePages\Resources\SimplePageResource;
 
 class FilamentSimplePagesPlugin implements Plugin
 {

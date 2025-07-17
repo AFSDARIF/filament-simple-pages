@@ -1,8 +1,8 @@
 <?php
 
-namespace Tobiasla78\FilamentSimplePages\Resources\SimplePageResource\Pages;
+namespace Afsdarif\FilamentSimplePages\Resources\SimplePageResource\Pages;
 
-use Tobiasla78\FilamentSimplePages\Resources\SimplePageResource;
+use Afsdarif\FilamentSimplePages\Resources\SimplePageResource;
 use Filament\Actions;
 use Filament\Resources\Pages\ListRecords;
 

@@ -1,6 +1,6 @@
 <?php
 
-namespace Tobiasla78\FilamentSimplePages\Models;
+namespace Afsdarif\FilamentSimplePages\Models;
 
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;

@@ -1,22 +1,23 @@
 <?php
 
-namespace Tobiasla78\FilamentSimplePages\Resources;
+namespace Afsdarif\FilamentSimplePages\Resources;
 
 use Filament\Forms\Components\FileUpload;
-use \Tobiasla78\FilamentSimplePages\Resources\SimplePageResource\Pages;
-use \Tobiasla78\FilamentSimplePages\Models\SimplePage;
+use \Afsdarif\FilamentSimplePages\Resources\SimplePageResource\Pages;
+use \Afsdarif\FilamentSimplePages\Models\SimplePage;
 use Filament\Forms\Components\RichEditor;
 use Filament\Forms\Components\TextInput;
 use Filament\Forms\Components\Toggle;
 use Filament\Forms\Form;
 use Filament\Resources\Resource;
+use Filament\Schemas\Schema;
 use Filament\Tables;
 use Filament\Tables\Columns\TextColumn;
 use Filament\Tables\Columns\ToggleColumn;
 use Filament\Tables\Table;
-use Filament\Tables\Actions\Action;
-use Filament\Forms\Components\Section;
-use Filament\Forms\Components\Grid;
+use Filament\Actions;
+use Filament\Schemas\Components\Section;
+use Filament\Schemas\Components\Grid;
 use Filament\Forms\Get;
 
 class SimplePageResource extends Resource
@@ -25,9 +26,9 @@ class SimplePageResource extends Resource
 
     protected static ?string $navigationIcon = 'heroicon-o-document-duplicate';
 
-    public static function form(Form $form): Form
+    public static function form(Schema $schema): Schema
     {
-        return $form
+        return $schema
             ->schema([
                 Section::make()
                     ->description('General Configuration')
@@ -110,14 +111,14 @@ class SimplePageResource extends Resource
                 //
             ])
             ->actions([
-                Action::make('view')
-                    ->url(fn ($record) : string => \Tobiasla78\FilamentSimplePages\Pages\SimplePage::getUrl([$record->slug]))
+                Actions\Action::make('view')
+                    ->url(fn ($record) : string => \Afsdarif\FilamentSimplePages\Pages\SimplePage::getUrl([$record->slug]))
                     ->icon('heroicon-o-eye'),
-                Tables\Actions\EditAction::make(),
+                Actions\EditAction::make(),
             ])
             ->bulkActions([
-                Tables\Actions\BulkActionGroup::make([
-                    Tables\Actions\DeleteBulkAction::make(),
+                Actions\BulkActionGroup::make([
+                    Actions\DeleteBulkAction::make(),
                 ]),
             ]);
     }

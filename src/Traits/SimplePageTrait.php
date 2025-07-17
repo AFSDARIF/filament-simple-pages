@@ -1,6 +1,6 @@
 <?php
 
-namespace Tobiasla78\FilamentSimplePages\Traits;
+namespace Afsdarif\FilamentSimplePages\Traits;
 
 use Filament\Support\Facades\FilamentView;
 use Filament\View\PanelsRenderHook;

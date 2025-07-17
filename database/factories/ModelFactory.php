@@ -1,6 +1,6 @@
 <?php
 
-namespace Tobiasla78\FilamentSimplePages\Database\Factories;
+namespace Afsdarif\FilamentSimplePages\Database\Factories;
 
 use Illuminate\Database\Eloquent\Factories\Factory;
 

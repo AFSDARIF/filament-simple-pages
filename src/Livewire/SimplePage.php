@@ -1,10 +1,10 @@
 <?php
 
-namespace Tobiasla78\FilamentSimplePages\Livewire;
+namespace Afsdarif\FilamentSimplePages\Livewire;
 
 use Livewire\Component;
-use Tobiasla78\FilamentSimplePages\Models\SimplePage as ModelsSimplePage;
-use Tobiasla78\FilamentSimplePages\Traits\SimplePageTrait;
+use Afsdarif\FilamentSimplePages\Models\SimplePage as ModelsSimplePage;
+use Afsdarif\FilamentSimplePages\Traits\SimplePageTrait;
 
 class SimplePage extends Component
 {
