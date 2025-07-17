@@ -1,6 +1,6 @@
 <?php
 
-namespace Tobiasla78\FilamentSimplePages\Tests;
+namespace Afsdarif\FilamentSimplePages\Tests;
 
 use BladeUI\Heroicons\BladeHeroiconsServiceProvider;
 use BladeUI\Icons\BladeIconsServiceProvider;
@@ -16,7 +16,7 @@ use Illuminate\Database\Eloquent\Factories\Factory;
 use Livewire\LivewireServiceProvider;
 use Orchestra\Testbench\TestCase as Orchestra;
 use RyanChandler\BladeCaptureDirective\BladeCaptureDirectiveServiceProvider;
-use Tobiasla78\FilamentSimplePages\FilamentSimplePagesServiceProvider;
+use Afsdarif\FilamentSimplePages\FilamentSimplePagesServiceProvider;
 
 class TestCase extends Orchestra
 {
@@ -25,7 +25,7 @@ class TestCase extends Orchestra
         parent::setUp();
 
         Factory::guessFactoryNamesUsing(
-            fn (string $modelName) => 'Tobiasla78\\FilamentSimplePages\\Database\\Factories\\' . class_basename($modelName) . 'Factory'
+            fn (string $modelName) => 'Afsdarif\\FilamentSimplePages\\Database\\Factories\\' . class_basename($modelName) . 'Factory'
         );
     }
 

@@ -1,6 +1,6 @@
 <?php
 
-namespace Tobiasla78\FilamentSimplePages\Tests;
+namespace Afsdarif\FilamentSimplePages\Tests;
 
 use Filament\Http\Middleware\Authenticate;
 use Filament\Http\Middleware\DisableBladeIconComponents;
@@ -16,7 +16,7 @@ use Illuminate\Routing\Middleware\SubstituteBindings;
 use Illuminate\Session\Middleware\AuthenticateSession;
 use Illuminate\Session\Middleware\StartSession;
 use Illuminate\View\Middleware\ShareErrorsFromSession;
-use Tobiasla78\FilamentSimplePages\FilamentSimplePagesPlugin;
+use Afsdarif\FilamentSimplePages\FilamentSimplePagesPlugin;
 
 class AdminPanelProvider extends PanelProvider
 {

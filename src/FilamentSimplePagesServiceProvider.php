@@ -1,12 +1,12 @@
 <?php
 
-namespace Tobiasla78\FilamentSimplePages;
+namespace Afsdarif\FilamentSimplePages;
 
 use Spatie\LaravelPackageTools\Commands\InstallCommand;
 use Spatie\LaravelPackageTools\Package;
 use Spatie\LaravelPackageTools\PackageServiceProvider;
 use Illuminate\Routing\Router;
-use Tobiasla78\FilamentSimplePages\Http\Middleware\IndexMiddleware;
+use Afsdarif\FilamentSimplePages\Http\Middleware\IndexMiddleware;
 
 class FilamentSimplePagesServiceProvider extends PackageServiceProvider
 {
@@ -49,7 +49,7 @@ class FilamentSimplePagesServiceProvider extends PackageServiceProvider
 
     protected function getAssetPackageName(): ?string
     {
-        return 'tobiasla78/filament-simple-pages';
+        return 'afsdarif/filament-simple-pages';
     }
 
     /**

@@ -1,8 +1,8 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
-use Tobiasla78\FilamentSimplePages\FilamentSimplePagesPlugin;
-use Tobiasla78\FilamentSimplePages\Livewire\SimplePage as LivewireSimplePage;
+use Afsdarif\FilamentSimplePages\FilamentSimplePagesPlugin;
+use Afsdarif\FilamentSimplePages\Livewire\SimplePage as LivewireSimplePage;
 
 try {
 

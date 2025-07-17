@@ -1,6 +1,6 @@
 <?php
 
-namespace Tobiasla78\FilamentSimplePages;
+namespace Afsdarif\FilamentSimplePages;
 
 class FilamentSimplePages
 {

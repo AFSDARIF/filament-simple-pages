@@ -1,12 +1,13 @@
 {
-    "name": "tobiasla78/filament-simple-pages",
+    "name": "afsdarif/filament-simple-pages",
     "description": "This is my package filament-simple-pages",
     "keywords": [
         "tobiasla78",
         "laravel",
-        "filament-simple-pages"
+        "filament-simple-pages",
+        "afsdarif"
     ],
-    "homepage": "https://github.com/tobiasla78/filament-simple-pages",
+    "homepage": "https://github.com/afsdarif/filament-simple-pages",
     "support": {
         "issues": "https://github.com/tobiasla78/filament-simple-pages/issues",
         "source": "https://github.com/tobiasla78/filament-simple-pages"
@@ -20,9 +21,9 @@
         }
     ],
     "require": {
-        "php": "^8.1",
-        "filament/filament": "^3.0",
-        "spatie/laravel-package-tools": "^1.15.0"
+        "php": "^8.2",
+        "filament/filament": "^4.0",
+        "spatie/laravel-package-tools": "^1.92.4"
     },
     "require-dev": {
         "nunomaduro/collision": "^7.9",
@@ -33,13 +34,13 @@
     },
     "autoload": {
         "psr-4": {
-            "Tobiasla78\\FilamentSimplePages\\": "src/",
-            "Tobiasla78\\FilamentSimplePages\\Database\\Factories\\": "database/factories/"
+            "Afsdarif\\FilamentSimplePages\\": "src/",
+            "Afsdarif\\FilamentSimplePages\\Database\\Factories\\": "database/factories/"
         }
     },
     "autoload-dev": {
         "psr-4": {
-            "Tobiasla78\\FilamentSimplePages\\Tests\\": "tests/"
+            "Afsdarif\\FilamentSimplePages\\Tests\\": "tests/"
         }
     },
     "scripts": {
@@ -56,10 +57,10 @@
     "extra": {
         "laravel": {
             "providers": [
-                "Tobiasla78\\FilamentSimplePages\\FilamentSimplePagesServiceProvider"
+                "Afsdarif\\FilamentSimplePages\\FilamentSimplePagesServiceProvider"
             ],
             "aliases": {
-                "FilamentSimplePages": "Tobiasla78\\FilamentSimplePages\\Facades\\FilamentSimplePages"
+                "FilamentSimplePages": "Afsdarif\\FilamentSimplePages\\Facades\\FilamentSimplePages"
             }
         }
     },

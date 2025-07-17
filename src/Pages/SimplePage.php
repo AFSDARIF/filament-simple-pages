@@ -1,14 +1,14 @@
 <?php
 
-namespace Tobiasla78\FilamentSimplePages\Pages;
+namespace Afsdarif\FilamentSimplePages\Pages;
 
 use Filament\Pages\Page;
 use Filament\Support\Facades\FilamentView;
 use Filament\View\PanelsRenderHook;
 use Illuminate\Support\Facades\Blade;
 use Illuminate\Contracts\Support\Htmlable;
-use Tobiasla78\FilamentSimplePages\FilamentSimplePagesPlugin;
-use Tobiasla78\FilamentSimplePages\Traits\SimplePageTrait;
+use Afsdarif\FilamentSimplePages\FilamentSimplePagesPlugin;
+use Afsdarif\FilamentSimplePages\Traits\SimplePageTrait;
 
 class SimplePage extends Page
 {
@@ -42,7 +42,7 @@ class SimplePage extends Page
 
     public function mount($slug)
     {
-        $this->record = \Tobiasla78\FilamentSimplePages\Models\SimplePage::where('slug', $slug)->first();
+        $this->record = \Afsdarif\FilamentSimplePages\Models\SimplePage::where('slug', $slug)->first();
 
         $this->abortIfNotPublic($this->record);
 
