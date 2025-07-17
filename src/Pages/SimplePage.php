@@ -14,7 +14,7 @@ class SimplePage extends Page
 {
     use SimplePageTrait;
 
-    protected static string $view = 'filament-simple-pages::filament.pages.simple-page';
+    protected string $view = 'filament-simple-pages::filament.pages.simple-page';
 
     protected static bool $shouldRegisterNavigation = false;
 
